@@ -51,10 +51,11 @@ Write a paragraph or two describing the project here.
 
 ### Hosting
 
-- Cloudflare
-- GitHub
-- Neon
-- Render
+- <a href="https://www.cloudflare.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg" style="height: 24px; width: auto;"/> Cloudflare</a>
+- <a href="https://github.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" style="height: 24px; width: auto;"/> Github</a>
+- <a href="https://neon.com/"><img src="https://neon.com/brand/neon-logomark-light-color.svg" style="height: 24px; width: auto;"/> Neon</a>
+- <a href="https://render.com/"><img src="Render Brand Kit/Logos/Black/Render logomark - Black.svg" style="height: 24px; width: auto;"/> Render</a>
+
 
 ## Project Structure
 
