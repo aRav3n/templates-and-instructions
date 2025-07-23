@@ -14,9 +14,10 @@ Write a paragraph or two describing the project here.
 
 ## Usage and Screenshots
 
-![Screenshot(s) of the app](https://raw.githubusercontent.com/aRav3n/odin-book-backend/main/public/screenshot.png)
-[Link to live preview](https://groundedwanderer.dev/)
-[Link to backend repo](https://github.com/aRav3n/odin-book-backend)
+<img src="https://raw.githubusercontent.com/aRav3n/odin-book-backend/main/public/screenshot.png" alt="screenshot" style="height: 50vh; width: auto;">
+
+- [Link to live preview](https://groundedwanderer.dev/)
+- [Link to backend repo](https://github.com/aRav3n/odin-book-backend)
 
 ### Features
 - Feature one
