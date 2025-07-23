@@ -34,14 +34,13 @@ Write a paragraph or two describing the project here.
 - HTML
 - CSS
 
-### Backend
-
-- [![logo](https://nodejs.org/static/logos/jsIconGreen.svg) Node.js](https://nodejs.org)
-- [ Express](https://expressjs.com/)
-- PostgreSQL
-- Prisma ORM
-- TypeScript
-- Jest
+### Backend          
+- <a href="https://nodejs.org"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" style="height: 24px; width: auto;"> Node.js</a>
+- <a href="https://expressjs.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" style="height: 24px; width: auto;"> Express</a>
+- <a href="https://www.postgresql.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" style="height: 24px; width: auto;"/> PostgreSQL</a>
+- <a href="https://www.prisma.io/"><img src="https://skillicons.dev/icons?i=prisma" style="height: 24px; width: auto;"/> Prisma ORM</a>
+- <a href="https://www.typescriptlang.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" style="height: 24px; width: auto;"/> TypeScript</a>
+- <a href="https://jestjs.io/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" style="height: 24px; width: auto;"/> Jest</a>
 
 ### Development Tools
 
@@ -83,6 +82,7 @@ Write a paragraph or two describing the project here.
 - @vitejs/plugin-react
 - bcryptjs
 - cors
+- [Devicion](https://devicon.dev/)
 - dotenv
 - eslint
 - eslint-config-prettier
@@ -95,6 +95,7 @@ Write a paragraph or two describing the project here.
 - prettier
 - react-dom
 - react-router-dom
+- [Skillicons](https://skillicons.dev/)
 - supertest
 - tsx
 - uuid
