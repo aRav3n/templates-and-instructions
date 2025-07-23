@@ -27,12 +27,12 @@ Write a paragraph or two describing the project here.
 <!-- Remove what is not applicable -->
 ### Frontend
 
-- Vite
-- React
-- Webpack
-- Javascript
-- HTML
-- CSS
+- <a href="https://vite.dev/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" style="height: 24px; width: auto;"> Vite</a>
+- <a href="https://react.dev/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" style="height: 24px; width: auto;"> React</a>
+- <a href="https://webpack.js.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg" style="height: 24px; width: auto;"> Webpack</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" style="height: 24px; width: auto;"> JavaScript</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" style="height: 24px; width: auto;"> HTML</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" style="height: 24px; width: auto;"> CSS</a>
 
 ### Backend          
 - <a href="https://nodejs.org"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" style="height: 24px; width: auto;"> Node.js</a>
