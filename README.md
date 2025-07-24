@@ -56,7 +56,7 @@ Here's a brief description of how to use the app.
 - <a href="https://www.cloudflare.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflare/cloudflare-original.svg" style="height: 24px; width: auto;"/> Cloudflare</a>
 - <a href="https://github.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" style="height: 24px; width: auto;"/> Github</a>
 - <a href="https://neon.com/"><img src="https://neon.com/brand/neon-logomark-light-color.svg" style="height: 24px; width: auto;"/> Neon</a>
-- <a href="https://render.com/"><img src="https://avatars.githubusercontent.com/u/36424661?s=200&v=4" style="height: 24px; width: auto;"/> Render</a>
+- <a href="https://render.com/"><img src="https://render.com/icon.svg" style="height: 24px; width: auto;"/> Render</a>
 
 
 ## Dependencies and Credits
