@@ -16,6 +16,8 @@ Write a paragraph or two describing the project here.
 
 <img src="https://raw.githubusercontent.com/aRav3n/odin-book-backend/main/public/screenshot.png" alt="screenshot" style="height: 50vh; width: auto;">
 
+Here's a brief description of how to use the app.
+
 - [Link to live preview](https://groundedwanderer.dev/)
 - [Link to backend repo](https://github.com/aRav3n/odin-book-backend)
 
@@ -57,6 +59,41 @@ Write a paragraph or two describing the project here.
 - <a href="https://render.com/"><img src="Render_Brand_Kit/Logos/Black/Render logomark - Black.svg" style="height: 24px; width: auto;"/> Render</a>
 
 
+## Dependencies and Credits
+
+### Package Dependencies
+
+- [@eslint/js](https://www.npmjs.com/package/@eslint/js)
+- [@prisma/extension-accelerate](https://www.npmjs.com/package/@prisma/extension-accelerate)
+- [@prisma/client](https://www.npmjs.com/package/@prisma/client)
+- [@types/node](https://www.npmjs.com/package/@types/node)
+- [@types/react](https://www.npmjs.com/package/@types/react)
+- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom)
+- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react)
+- [bcryptjs](https://www.npmjs.com/package/bcryptjs)
+- [cors](https://www.npmjs.com/package/cors)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [eslint](https://www.npmjs.com/package/eslint)
+- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+- [eslint-plugin-react-refresh](https://www.npmjs.com/package/eslint-plugin-react-refresh)
+- [express-validator](https://www.npmjs.com/package/express-validator)
+- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+- [lucide-react](https://www.npmjs.com/package/lucide-react)
+- [pg](https://www.npmjs.com/package/pg)
+- [prettier](https://www.npmjs.com/package/prettier)
+- [react-dom](https://www.npmjs.com/package/react-dom)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+- [supertest](https://www.npmjs.com/package/supertest)
+- [tsx](https://www.npmjs.com/package/tsx)
+- [uuid](https://www.npmjs.com/package/uuid)
+
+### Other Credits
+
+- [Devicion](https://devicon.dev/)
+- [Skillicons](https://skillicons.dev/)
+
+
 ## Project Structure
 
 ```bash
@@ -73,31 +110,3 @@ Write a paragraph or two describing the project here.
     ├── app.ts             # App entry point
     └── server.ts
 ```
-
-## Dependencies and Credits
-- @eslint/js
-- @prisma/extension-accelerate
-- @prisma/client
-- @types/node
-- @types/react
-- @types/react-dom
-- @vitejs/plugin-react
-- bcryptjs
-- cors
-- [Devicion](https://devicon.dev/)
-- dotenv
-- eslint
-- eslint-config-prettier
-- eslint-plugin-react-hooks
-- eslint-plugin-react-refresh
-- express-validator
-- jsonwebtoken
-- lucide-react
-- pg
-- prettier
-- react-dom
-- react-router-dom
-- [Skillicons](https://skillicons.dev/)
-- supertest
-- tsx
-- uuid
