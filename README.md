@@ -5,8 +5,8 @@
 - [Description](#description)
 - [Usage and Screenshots](#usage-and-screenshots)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
 - [Dependencies and Credits](#dependencies-and-credits)
+- [Project Structure](#project-structure)
 
 ## Description
 
