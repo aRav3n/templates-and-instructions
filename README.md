@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Description](#description)
+- [Installation Instructions](#installation-instructions)
 - [Usage and Screenshots](#usage-and-screenshots)
 - [Technologies Used](#technologies-used)
 - [Dependencies and Credits](#dependencies-and-credits)
@@ -12,9 +13,29 @@
 
 Write a paragraph or two describing the project here.
 
+## Installation Instructions
+
+1. Clone or fork this repo
+2. cd into the project root directory (where the README.md file is located)
+3. Run the following in your terminal
+    - ``` bash
+      npm init -y
+ 
+      npm install dependencies_separated_by_spaces
+ 
+      npm install devDependencies_separated_by_spaces --save-dev
+      ```
+4. Create a .env file
+   - ``` bash
+     env variables
+     ```
+6. ``` bash
+   npm run dev
+   ```
+
 ## Usage and Screenshots
 
-<img src="https://raw.githubusercontent.com/aRav3n/odin-book-backend/main/public/screenshot.png" alt="screenshot" style="height: 50vh; width: auto;">
+<img src="./public/screenshot.png" alt="screenshot" style="height: 50vh; width: auto;">
 
 Here's a brief description of how to use the app.
 
@@ -63,30 +84,7 @@ Here's a brief description of how to use the app.
 
 ### Package Dependencies
 
-- [@eslint/js](https://www.npmjs.com/package/@eslint/js)
-- [@prisma/extension-accelerate](https://www.npmjs.com/package/@prisma/extension-accelerate)
-- [@prisma/client](https://www.npmjs.com/package/@prisma/client)
-- [@types/node](https://www.npmjs.com/package/@types/node)
-- [@types/react](https://www.npmjs.com/package/@types/react)
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom)
-- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react)
-- [bcryptjs](https://www.npmjs.com/package/bcryptjs)
-- [cors](https://www.npmjs.com/package/cors)
-- [dotenv](https://www.npmjs.com/package/dotenv)
-- [eslint](https://www.npmjs.com/package/eslint)
-- [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
-- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
-- [eslint-plugin-react-refresh](https://www.npmjs.com/package/eslint-plugin-react-refresh)
-- [express-validator](https://www.npmjs.com/package/express-validator)
-- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
-- [lucide-react](https://www.npmjs.com/package/lucide-react)
-- [pg](https://www.npmjs.com/package/pg)
-- [prettier](https://www.npmjs.com/package/prettier)
-- [react-dom](https://www.npmjs.com/package/react-dom)
-- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
-- [supertest](https://www.npmjs.com/package/supertest)
-- [tsx](https://www.npmjs.com/package/tsx)
-- [uuid](https://www.npmjs.com/package/uuid)
+- [packageName](https://www.npmjs.com/package/packageName)
 
 ### Other Credits
 
@@ -97,16 +95,14 @@ Here's a brief description of how to use the app.
 ## Project Structure
 
 ```bash
+├──controllers/            # Controller files
+├──db/                     # Compiled queries.js
+├──generated/              # Generated Prisma files
 ├──prisma/                 # Prisma models and migrations
-├──src/
+├──public/                 # Locally hosted images and icons
+├──routes/                 # Router files
+├──src/                    # Source files
     ├── controllers/       # Request handlers
-    ├── db/                # Prisma client and custom queries
-    ├── middlewares/       # Auth, error handling, validation
-    ├── routes/            # Route definitions
-    ├── tests/             # Unit tests
-    ├── types/             # Custom TypeScript types
-    ├── validators/        # Validation schemas
-    ├── utils/             # Utility functions
-    ├── app.ts             # App entry point
     └── server.ts
+└──test/                   # Test files
 ```
