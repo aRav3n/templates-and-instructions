@@ -25,13 +25,31 @@ Write a paragraph or two describing the project here.
  
       npm install devDependencies_separated_by_spaces --save-dev
       ```
-4. Create a .env file
+1. <!-- node --> Create a .env file 
    - ``` bash
-     env variables
+     NODE_ENV=development
+     TEST_DATABASE_URL="your_local_test_database_url"
+     DATABASE_URL="your_local_database_url"
+     SECRET_KEY="your_secret_key"
      ```
-6. ``` bash
+1. <!-- react --> If running the API locally
+   1. Find the URL
+       - For a Node.js / Express app this would be in: *backend_folder/app.js* at the bottom
+   2. Update the API URL
+        -  ``` bash
+           code src/functions/apiCommunication.js 
+           ```
+        - Update `const apiUrl` with the new URL. It is likely http://localhost:3000
+          - Be sure to remove the trailing "/" if there is one
+1. ``` bash
    npm run dev
    ```
+   - `^` + `c` will end the process 
+1. <!-- react --> Navigate to the url displayed in the terminal: `➜  Local:   http://localhost:5173/` 
+1. <!-- node --> After making updates to ./src/queries.ts you'll want to run this to recompile queries.js 
+   - ``` bash
+     npx tsc
+     ```
 
 ## Usage and Screenshots
 
