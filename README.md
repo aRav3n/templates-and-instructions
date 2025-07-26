@@ -20,18 +20,26 @@ Write a paragraph or two describing the project here.
 3. Run the following in your terminal
     - ``` bash
       npm init -y
- 
       npm install dependencies_separated_by_spaces
- 
       npm install devDependencies_separated_by_spaces --save-dev
       ```
-1. <!-- node --> Create a .env file 
+    - ``` bash   <!-- node -->
+      CREATE DATABASE database_name;
+      \c database_name
+      \q
+      npx tsc --init  
+      npx prisma  
+      npx prisma init  
+      code .env
+      ```
+1. <!-- node --> In the .env file 
    - ``` bash
      NODE_ENV=development
      TEST_DATABASE_URL="your_local_test_database_url"
      DATABASE_URL="your_local_database_url"
      SECRET_KEY="your_secret_key"
      ```
+1. <!-- node --> `code prisma/schema.prisma`
 1. <!-- react --> If running the API locally
    1. Find the URL
        - For a Node.js / Express app this would be in: *backend_folder/app.js* at the bottom
@@ -41,9 +49,7 @@ Write a paragraph or two describing the project here.
            ```
         - Update `const apiUrl` with the new URL. It is likely http://localhost:3000
           - Be sure to remove the trailing "/" if there is one
-1. ``` bash
-   npm run dev
-   ```
+1. `npm run dev`
    - `^` + `c` will end the process 
 1. <!-- react --> Navigate to the url displayed in the terminal: `➜  Local:   http://localhost:5173/` 
 1. <!-- node --> After making updates to ./src/queries.ts you'll want to run this to recompile queries.js 
