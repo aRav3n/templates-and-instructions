@@ -20,8 +20,7 @@ Write a paragraph or two describing the project here.
 3. Run the following in your terminal
     - ``` bash
       npm init -y
-      npm install dependencies_separated_by_spaces
-      npm install devDependencies_separated_by_spaces --save-dev
+      npm install
       ```
     - ``` bash   <!-- node -->
       CREATE DATABASE database_name;
