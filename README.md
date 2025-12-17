@@ -3,15 +3,45 @@
 ## Table of Contents
 
 - [Description](#description)
-- [Installation Instructions](#installation-instructions)
-- [Usage and Screenshots](#usage-and-screenshots)
-- [Technologies Used](#technologies-used)
-- [Dependencies and Credits](#dependencies-and-credits)
-- [Project Structure](#project-structure)
+- **For End Users**
+   - [Where to Download the App](#where-to-download-the-app)
+   - [Usage and Screenshots](#usage-and-screenshots)
+- **For Developers**
+   - [Installation Instructions](#installation-instructions)
+   - [Technologies Used](#technologies-used)
+   - [Dependencies and Credits](#dependencies-and-credits)
+   - [Project Structure](#project-structure)
 
 ## Description
 
 Write a paragraph or two describing the project here.
+
+### Features
+- Feature one
+- Feature two
+
+## Where to Download the App
+
+<!-- ******** Add link ************
+<a href="https://play.google.com/store/games"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" style="height: 48px; width: auto;"/></a> 
+-->
+
+<!-- ******* Need to get link to badge per: https://f-droid.org/docs/Badges/ ******
+<a href="https://f-droid.org/packages/"><img src="" style="height: 48px; width: auto;"/></a>
+-->
+
+<!-- ******** Add link ************
+<a href="APP_CONFIGURATION_HTML_LINK"><img src="https://raw.githubusercontent.com/ImranR98/Obtainium/refs/heads/main/assets/graphics/badge_obtainium.png" style="height: 48px; width: auto;"/></a>
+-->
+
+## Usage and Screenshots
+
+<img src="./public/screenshot.png" alt="screenshot" style="height: 50vh; width: auto;">
+
+Here's a brief description of how to use the app.
+
+- [Link to live preview](https://groundedwanderer.dev/)
+- [Link to backend repo](https://github.com/aRav3n/odin-book-backend)
 
 ## Installation Instructions
 
@@ -75,21 +105,10 @@ Write a paragraph or two describing the project here.
      npx tsc
      ```
 
-## Usage and Screenshots
-
-<img src="./public/screenshot.png" alt="screenshot" style="height: 50vh; width: auto;">
-
-Here's a brief description of how to use the app.
-
-- [Link to live preview](https://groundedwanderer.dev/)
-- [Link to backend repo](https://github.com/aRav3n/odin-book-backend)
-
-### Features
-- Feature one
-- Feature two
-
 ## Technologies Used
 
+- <a href="https://expo.dev"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg" style="height: 2rem; width: auto; vertical-align: middle;"> Expo</a>
+- <a href="https://reactnative.dev/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" style="height: 2rem; width: auto;"> React Native</a>
 - <a href="https://vite.dev/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" style="height: 2rem; width: auto; vertical-align: middle;"> Vite </a>
 - <a href="https://react.dev/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" style="height: 2rem; width: auto;"> React</a>
 - <a href="https://webpack.js.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg" style="height: 2rem; width: auto;"> Webpack</a>
