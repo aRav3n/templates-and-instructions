@@ -23,6 +23,10 @@ Write a paragraph or two describing the project here.
 ## Where to Download the App
 
 <!-- ******** Add link ************
+[Try it out online](LINK_TO_WEB_DEPLOYMENT)
+-->
+
+<!-- ******** Add link ************
 <a href="https://play.google.com/store/games"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" style="height: 48px; width: auto;"/></a> 
 -->
 
