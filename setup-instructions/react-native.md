@@ -1,6 +1,15 @@
 # React Native Setup
 
-## Initial Setup
+## Table of Contents
+
+- [Initial Setup](#initial-setup)
+  - [Prisma Setup](#prisma-setup)
+- [Publishing](#publishing)
+  - [On Github](#github)
+  - [For Obtanium](#obtanium)
+  - [A Web Deployment](#web-deployment)
+
+# Initial Setup
 
 1.  Install [Expo Go](https://expo.dev/go) on your device if you don't already have it
 2.  In parent directory
@@ -29,11 +38,12 @@
 13. ```bash
     npx expo start --tunnel
     ```
-14. Update the README using the [template](https://github.com/aRav3n/readme_template)
+14. Update the README using my template
+
     1.  ```bash
         code README.md
         ```
-    2.  Copy [my README Template](https://github.com/aRav3n/doc_templates/blob/main/README.md?plain=1)
+    2.  Copy my [React Native README Template](https://github.com/aRav3n/templates-and-instructions/blob/main/templates/README/react-native.md)
     3.  Paste it into README.md
     4.  ```bash
         git add .
@@ -47,20 +57,23 @@
         ```bash
         git push origin main
         ```
-15. Start building the project  
-    1\. [Setup instructions](https://docs.expo.dev/tutorial/create-your-first-app/)
+
+15. Start building the project
+    1. [Setup instructions](https://docs.expo.dev/tutorial/create-your-first-app/)
 
 ## Prisma Setup
 
-1.  Install dependencies
+1.  ```bash
+    npx expo install @prisma/client
+    npx expo install @prisma/react-native
+    npx expo install react-native-quick-base64
+    npm install @prisma/config
+    ```
+1.  ```bash
+    code app.json
+    ```
     - ```bash
-      npx expo install @prisma/client
-      npx expo install @prisma/react-native
-      npx expo install react-native-quick-base64
-      npm install @prisma/config
-      ```
-1.  Update app.json
-    - ```bash
+      // Verify that @prisma/react-native is listed under expo.plugins
       {
         "expo": {
           // ... The rest of your expo config
@@ -68,13 +81,24 @@
         }
       }
       ```
-1.  To activate the Prisma plugin run:
-    - ```bash
-      npx expo prebuild --clean
+1.  ```bash
+    git add .
+    git commit
+    ```
+    - ```git
+      chore: install Prisma dependencies
       ```
 1.  ```bash
+    git push origin main
+    ```
+1.  ```bash
+    npx expo prebuild --clean
+    ```
+1.  ```bash
+    touch schema.prisma
     code schema.prisma
     ```
+
     - ```prisma
       generator client {
         provider = "prisma-client-js"
@@ -92,9 +116,12 @@
         name         String
       }
       ```
+
 1.  ```bash
+    touch prisma.config.ts
     code prisma.config.ts
     ```
+
     - ```ts
       import { defineConfig } from "@prisma/config";
 
@@ -105,12 +132,19 @@
         },
       });
       ```
-1.  Generate the Prisma databases:
-    - ```bash
-      npx prisma@latest migrate dev
-      npx prisma@latest generate
-      ```
-1.  Create your queries.ts file
+
+1.  ```bash
+    npx prisma@latest migrate dev
+    npx prisma@latest generate
+    ```
+    - Enter a name for the migration when asked `✔ Enter a name for the new migration:`
+      - When in doubt, `init` is a good name for the first migration
+1.  ```bash
+    mkdir db
+    touch db/queries.ts
+    code db/queries.ts
+    ```
+
     - ```ts
       import { PrismaClient } from "@prisma/client";
       import { reactiveHooksExtension } from "@prisma/react-native";
@@ -118,9 +152,23 @@
 
       const baseClient = new PrismaClient();
 
-      export const extendedClient = baseClient.$extends(
+      const prisma = baseClient.$extends(
         reactiveHooksExtension()
       );
+
+      // Queries go here
+
+      export {
+        // user queries
+          // createUser
+          // ...etc
+
+        // account queries
+          // createAccount
+          // ...etc
+
+        // ...etc
+      }
       ```
 
 # Publishing
@@ -150,6 +198,7 @@
 
 ## Obtanium
 
+- First ensure that your app is [published on Github](#github)
 - In the **Obtanium** app click **Add app**
 - Paste your repo's url
 - Install the app
