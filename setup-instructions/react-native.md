@@ -89,9 +89,6 @@
       chore: install Prisma dependencies
       ```
 1.  ```bash
-    git push origin main
-    ```
-1.  ```bash
     npx expo prebuild --clean
     ```
 1.  ```bash
@@ -118,6 +115,13 @@
       ```
 
 1.  ```bash
+    git add .
+    git commit
+    ```
+    - ```git
+      chore: create Prisma schema
+      ```
+1.  ```bash
     touch prisma.config.ts
     code prisma.config.ts
     ```
@@ -134,11 +138,25 @@
       ```
 
 1.  ```bash
+    git add .
+    git commit
+    ```
+    - ```git
+      chore: create Prisma config file
+      ```
+1.  ```bash
     npx prisma@latest migrate dev
     npx prisma@latest generate
     ```
     - Enter a name for the migration when asked `✔ Enter a name for the new migration:`
       - When in doubt, `init` is a good name for the first migration
+1.  ```bash
+    git add .
+    git commit
+    ```
+    - ```git
+      chore: create first Prisma migration
+      ```
 1.  ```bash
     mkdir db
     touch db/queries.ts
@@ -152,24 +170,32 @@
 
       const baseClient = new PrismaClient();
 
-      const prisma = baseClient.$extends(
-        reactiveHooksExtension()
-      );
+      const prisma = baseClient.$extends(reactiveHooksExtension());
 
       // Queries go here
 
-      export {
-        // user queries
-          // createUser
-          // ...etc
-
-        // account queries
-          // createAccount
-          // ...etc
-
-        // ...etc
-      }
+      export // user queries
+      // createUser
+      // ...etc
+      // account queries
+      // createAccount
+      // ...etc
+      // ...etc
+       {};
       ```
+
+1.  ```bash
+    git add .
+    git commit
+    ```
+
+    - ```git
+      build: create queries.ts
+      ```
+
+1.  ```bash
+    git push origin main
+    ```
 
 # Publishing
 
