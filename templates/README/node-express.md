@@ -64,7 +64,7 @@ Write a paragraph or two describing the project here.
 1. ```bash
    npm run dev
    ```
-   - `^` + `c` will end the process <!-- all -->
+   - `^` + `c` will end the process
 1. After making updates to ./src/queries.ts you'll want to run this to recompile queries.js
    - ```bash
      npx tsc
