@@ -1,6 +1,7 @@
 # My Templates and Instructions
 
 - **README Templates**
+  - [General Use](./templates/README/general-use.md)
   - [Node + Express](./templates/README/node-express.md)
   - [React](./templates/README/react.md)
   - [React Native](./templates/README/react-native.md)
