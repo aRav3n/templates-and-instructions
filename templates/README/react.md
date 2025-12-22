@@ -67,6 +67,7 @@ Here's a brief description of how to use the app.
 1. ```bash
    npm run dev
    ```
+   - `^` + `c` will end the process
 1. Navigate to the url displayed in the terminal: `➜  Local:   http://localhost:5173/`
 
 ## Technologies Used
