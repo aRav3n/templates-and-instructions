@@ -27,18 +27,15 @@
 7.  In the GitHub repo click **Add File** > **Create New File**
 8.  In the file name field, type `LICENSE` (all uppercase).
 9.  Under the file name, click **Choose a license template**
-10. Select the desired license
-11. Submit with this commit message:
+1.  Select the desired license
+1.  Submit with this commit message:
     - ```bash
       chore: add license
       ```
-12. ```bash
+1.  ```bash
     git pull origin main
     ```
-13. ```bash
-    npx expo start --tunnel
-    ```
-14. Update the README using my template
+1.  Update the README using my template
 
     1.  ```bash
         code README.md
@@ -58,8 +55,11 @@
         git push origin main
         ```
 
-15. Start building the project
+1.  Start building the project
     1. [Setup instructions](https://docs.expo.dev/tutorial/create-your-first-app/)
+1.  ```bash
+    clear && npx expo start --tunnel
+    ```
 
 ## Prisma Setup
 
