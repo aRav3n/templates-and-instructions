@@ -71,7 +71,10 @@ Here's a brief description of how to use the app.
 1. ```bash react native
    npx expo start
    ```
-   - If there are [issues](https://docs.expo.dev/get-started/start-developing/#having-problems) run `npx expo start --tunnel` instead
+   - If there are [issues](https://docs.expo.dev/get-started/start-developing/#having-problems) run this instead
+     - ```bash
+       npx expo start --tunnel
+       ```
    - `^` + `c` will end the process
 
 ## Technologies Used
