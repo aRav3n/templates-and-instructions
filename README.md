@@ -9,4 +9,5 @@
   - [Node + Express](./setup-instructions/node-express.md)
   - [React](./setup-instructions/react.md)
   - [React Native](./setup-instructions/react-native.md)
-- [Privacy Policy Template](./templates/privacy_policy.md)
+- **Other Document Templates**
+  - [Privacy Policy Template](./templates/privacy_policy.md)
