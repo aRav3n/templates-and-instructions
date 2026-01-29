@@ -79,6 +79,27 @@ Here's a brief description of how to use the app.
        ```
    - `^` + `c` will end the process
 
+**Note: to build a production apk:**
+1. ```bash
+   code eas.json
+   ```
+1. ```bash
+   {
+    ...
+    "build": {
+      "apk": {
+        "android": {
+          "buildType": "apk"
+        }
+      },
+   ...
+   }
+   ```
+1. Then you can run the apk build profile
+   - ```
+     eas build --platform android --profile apk
+     ```
+
 ## Technologies Used
 
 - <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" style="height: 2rem; width: auto;"> CSS</a>
