@@ -65,29 +65,29 @@ Here's a brief description of how to use the app.
 1. `git clone COPIED_URL`
 1. `cd PROJECT_FOLDER`
 1. Run the following in your terminal
-   - ```bash
-     npm init -y
-     npm install
-     ```
-   - ```bash <!-- react-native -->
-     eas login
-     ```
-   - ```bash <!-- node -->
-     CREATE DATABASE database_name;
-     \c database_name
-     \q
-     npx tsc --init
-     npx prisma
-     npx prisma init
-     code .env
-     ```
+   ```bash
+   npm init -y
+   npm install
+   ```
+   ```bash <!-- react-native -->
+   eas login
+   ```
+   ```bash <!-- node -->
+   CREATE DATABASE database_name;
+   \c database_name
+   \q
+   npx tsc --init
+   npx prisma
+   npx prisma init
+   code .env
+   ```
 1. In the .env file <!-- node -->
-   - ```bash
-     NODE_ENV=development
-     TEST_DATABASE_URL="your_local_test_database_url"
-     DATABASE_URL="your_local_database_url"
-     SECRET_KEY="your_secret_key"
-     ```
+   ```bash
+   NODE_ENV=development
+   TEST_DATABASE_URL="your_local_test_database_url"
+   DATABASE_URL="your_local_database_url"
+   SECRET_KEY="your_secret_key"
+   ```
 1. ```bash <!-- node -->
    code prisma/schema.prisma
    ```
@@ -95,11 +95,14 @@ Here's a brief description of how to use the app.
    1. Find the URL
       - For a Node.js / Express app this would be in: _backend_folder/app.js_ at the bottom
    2. Update the API URL
-      - ```bash
-        code src/functions/apiCommunication.js
-        ```
+
+      ```bash
+      code src/functions/apiCommunication.js
+      ```
+
       - Update `const apiUrl` with the new URL. It is likely http://localhost:3000
         - Be sure to remove the trailing "/" if there is one
+
 1. ```bash <!-- all but react native -->
    npm run dev
    ```
@@ -112,9 +115,9 @@ Here's a brief description of how to use the app.
 
 1. Navigate to the url displayed in the terminal: `➜  Local:   http://localhost:5173/` <!-- react -->
 1. After making updates to ./src/queries.ts you'll want to run this to recompile queries.js <!-- node -->
-   - ```bash
-     npx tsc
-     ```
+   ```bash
+   npx tsc
+   ```
 
 ## Technologies Used
 

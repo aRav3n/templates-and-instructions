@@ -52,19 +52,19 @@ Here's a brief description of how to use the app.
 1. `git clone COPIED_URL`
 1. `cd PROJECT_FOLDER`
 1. Run the following in your terminal
-   - ```bash
-     npm init -y
-     npm install
-     ```
+   ```bash
+   npm init -y
+   npm install
+   ```
 1. If running the API locally
    1. Find the URL
       - For a Node.js / Express app this would be in: _backend_folder/app.js_ at the bottom
    2. Update the API URL
-      - ```bash
-        code src/functions/apiCommunication.js
-        ```
-      - Update `const apiUrl` with the new URL. (It is likely http://localhost:3000)
-        - Be sure to remove the trailing "/" if there is one
+      1. ```bash
+         code src/functions/apiCommunication.js
+         ```
+      1. Update `const apiUrl` with the new URL. (It is likely http://localhost:3000)
+         - Be sure to remove the trailing "/" if there is one
 1. ```bash
    npm run dev
    ```

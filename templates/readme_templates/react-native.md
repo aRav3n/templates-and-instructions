@@ -70,11 +70,11 @@ Here's a brief description of how to use the app.
 1. `git clone COPIED_URL`
 1. `cd PROJECT_FOLDER`
 1. Run the following in your terminal
-   - ```bash
+     ```bash
      npm init -y
      npm install
      ```
-   - ```bash
+     ```bash
      eas login
      ```
 1. ```bash react native
@@ -82,7 +82,7 @@ Here's a brief description of how to use the app.
    ```
 
    - If there are [issues](https://docs.expo.dev/get-started/start-developing/#having-problems) run this instead
-     - ```bash
+       ```bash
        npx expo start --tunnel
        ```
    - `^` + `c` will end the process
@@ -104,7 +104,7 @@ Here's a brief description of how to use the app.
    }
    ```
 1. Then you can run the apk build profile
-   - ```
+     ```
      eas build --platform android --profile apk
      ```
 

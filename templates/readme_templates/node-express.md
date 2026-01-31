@@ -39,26 +39,26 @@ Write a paragraph or two describing the project here.
 1. `git clone COPIED_URL`
 1. `cd PROJECT_FOLDER`
 1. Run the following in your terminal
-   - ```bash
-     npm init -y
-     npm install
-     ```
-   - ```bash
-     CREATE DATABASE database_name;
-     \c database_name
-     \q
-     npx tsc --init
-     npx prisma
-     npx prisma init
-     code .env
-     ```
+   ```bash
+   npm init -y
+   npm install
+   ```
+   ```bash
+   CREATE DATABASE database_name;
+   \c database_name
+   \q
+   npx tsc --init
+   npx prisma
+   npx prisma init
+   code .env
+   ```
 1. In the .env file
-   - ```bash
-     NODE_ENV=development
-     TEST_DATABASE_URL="your_local_test_database_url"
-     DATABASE_URL="your_local_database_url"
-     SECRET_KEY="your_secret_key"
-     ```
+   ```bash
+   NODE_ENV=development
+   TEST_DATABASE_URL="your_local_test_database_url"
+   DATABASE_URL="your_local_database_url"
+   SECRET_KEY="your_secret_key"
+   ```
 1. ```bash
    code prisma/schema.prisma
    ```
@@ -67,10 +67,11 @@ Write a paragraph or two describing the project here.
    ```
 
    - `^` + `c` will end the process
+
 1. After making updates to ./src/queries.ts you'll want to run this to recompile queries.js
-   - ```bash
-     npx tsc
-     ```
+   ```bash
+   npx tsc
+   ```
 
 ## Technologies Used
 

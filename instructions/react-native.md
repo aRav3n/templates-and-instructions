@@ -14,9 +14,9 @@
 
 1.  Install [Expo Go](https://expo.dev/go) on your device if you don't already have it
 2.  In parent directory
-    - ```bash
-      npx create-expo-app@latest PROJECT_NAME
-      ```
+    ```bash
+    npx create-expo-app@latest PROJECT_NAME
+    ```
 3.  ```bash
     cd PROJECT_NAME
     ```
@@ -30,9 +30,9 @@
 9.  Under the file name, click **Choose a license template**
 10. Select the desired license
 11. Submit with this commit message:
-    - ```bash
-      chore: add license
-      ```
+    ```bash
+    chore: add license
+    ```
 12. ```bash
     git pull origin main
     ```
@@ -73,24 +73,24 @@
     code app.json
     ```
 
-    - ```bash
-      // Verify that @prisma/react-native is listed under expo.plugins
-      {
-        "expo": {
-          // ... The rest of your expo config
-          "plugins": ["@prisma/react-native"]
-        }
+    ```bash
+    // Verify that @prisma/react-native is listed under expo.plugins
+    {
+      "expo": {
+        // ... The rest of your expo config
+        "plugins": ["@prisma/react-native"]
       }
-      ```
+    }
+    ```
 
 1.  ```bash
     git add .
     git commit
     ```
 
-    - ```git
-      chore: install Prisma dependencies
-      ```
+    ```git
+    chore: install Prisma dependencies
+    ```
 
 1.  ```bash
     npx expo prebuild --clean
@@ -100,57 +100,57 @@
     code schema.prisma
     ```
 
-    - ```prisma
-      generator client {
-        provider = "prisma-client-js"
-        previewFeatures = ["reactNative"]
-      }
+    ```prisma
+    generator client {
+      provider = "prisma-client-js"
+      previewFeatures = ["reactNative"]
+    }
 
-      datasource db {
-        provider = "sqlite"
-      }
+    datasource db {
+      provider = "sqlite"
+    }
 
-      // Your data model
+    // Your data model
 
-      model User {
-        id           Int     @id @default(autoincrement())
-        name         String
-      }
-      ```
+    model User {
+      id           Int     @id @default(autoincrement())
+      name         String
+    }
+    ```
 
 1.  ```bash
     git add .
     git commit
     ```
 
-    - ```git
-      chore: create Prisma schema
-      ```
+    ```git
+    chore: create Prisma schema
+    ```
 
 1.  ```bash
     touch prisma.config.ts
     code prisma.config.ts
     ```
 
-    - ```ts
-      import { defineConfig } from "@prisma/config";
+    ```ts
+    import { defineConfig } from "@prisma/config";
 
-      export default defineConfig({
-        schema: "schema.prisma",
-        datasource: {
-          url: "file:./app.db",
-        },
-      });
-      ```
+    export default defineConfig({
+      schema: "schema.prisma",
+      datasource: {
+        url: "file:./app.db",
+      },
+    });
+    ```
 
 1.  ```bash
     git add .
     git commit
     ```
 
-    - ```git
-      chore: create Prisma config file
-      ```
+    ```git
+    chore: create Prisma config file
+    ```
 
 1.  ```bash
     npx prisma@latest migrate dev
@@ -165,9 +165,9 @@
     git commit
     ```
 
-    - ```git
-      chore: create first Prisma migration
-      ```
+    ```git
+    chore: create first Prisma migration
+    ```
 
 1.  ```bash
     mkdir db
@@ -175,35 +175,35 @@
     code db/queries.ts
     ```
 
-    - ```ts
-      import { PrismaClient } from "@prisma/client";
-      import { reactiveHooksExtension } from "@prisma/react-native";
-      import "@prisma/react-native";
+    ```ts
+    import { PrismaClient } from "@prisma/client";
+    import { reactiveHooksExtension } from "@prisma/react-native";
+    import "@prisma/react-native";
 
-      const baseClient = new PrismaClient();
+    const baseClient = new PrismaClient();
 
-      const prisma = baseClient.$extends(reactiveHooksExtension());
+    const prisma = baseClient.$extends(reactiveHooksExtension());
 
-      // Queries go here
+    // Queries go here
 
-      export // user queries
-      // createUser
-      // ...etc
-      // account queries
-      // createAccount
-      // ...etc
-      // ...etc
-       {};
-      ```
+    export // user queries
+    // createUser
+    // ...etc
+    // account queries
+    // createAccount
+    // ...etc
+    // ...etc
+     {};
+    ```
 
 1.  ```bash
     git add .
     git commit
     ```
 
-    - ```git
-      build: create queries.ts
-      ```
+    ```git
+    build: create queries.ts
+    ```
 
 1.  ```bash
     git push origin main
