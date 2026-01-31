@@ -5,6 +5,7 @@
 - [Initial Setup](#initial-setup)
   - [Prisma Setup](#prisma-setup)
 - [Publishing](#publishing)
+  - [Creating Icons](#creating-icons)
   - [On Github](#github)
   - [For Obtanium](#obtanium)
   - [A Web Deployment](#web-deployment)
@@ -198,6 +199,62 @@
     ```
 
 # Publishing
+
+## Creating Icons
+1. Follow [this guide](https://docs.expo.dev/develop/user-interface/splash-screen-and-app-icon/) and/or check out the [related YouTube video](https://www.youtube.com/watch?v=3Bsw8a1BJoQ)
+1. Duplicate `ios-light.png`
+   1. Rename the new copy to `icon.png`
+1. In Figma, under ios-light, select the actual icon itself (so that there is no negative space around the image) and export that as a png with the name `favicon`
+   1. Resize favicon.png to 48px x 48px
+1. ```bash
+   rm -r -f assets/images
+   code app.json
+   ```
+   1. ```json
+      {
+        "expo": {
+          ...
+          "icon": "./assets/icons/icon.png",
+          ...
+          "ios": {
+            "icon": {
+              "dark": "./assets/icons/ios-dark.png",
+              "light": "./assets/icons/ios-light.png",
+              "tinted": "./assets/icons/ios-tinted.png"
+            },
+            ...
+          },
+          "android": {
+            "adaptiveIcon": {
+              ...
+              "foregroundImage": "./assets/icons/adaptive-icon.png",
+              "monochromeImage": "./assets/icons/adaptive-icon.png"
+            },
+            ...
+          },
+          "web": {
+            ...
+            "favicon": "./assets/icons/favicon.png"
+          },
+          "plugins": [
+            ...
+            [
+              ...
+              {
+                "image": "./assets/icons/splash-icon-dark.png",
+                ...
+                "backgroundColor": "#ffffff",
+                "dark": {
+                  "backgroundColor": "#000000",
+                  "image": "./assets/icons/splash-icon-light.png"
+                }
+              }
+            ]
+          ],
+          ...
+        }
+      }
+      ```
 
 ## Github
 
