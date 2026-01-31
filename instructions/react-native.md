@@ -309,18 +309,6 @@
    1. When all this is complete, hit **Publish release**
    1. Congratulate yourself on a job well done!
 
-## Obtanium
-
-- First ensure that your app is [published on Github](#github)
-- In the **Obtanium** app click **Add app**
-- Paste your repo's url
-- Install the app
-- Long press on the app in the Obtanium **Apps list**
-- Hit the **...** button
-- **Share app configuration as HTML link**
-- Copy it and paste into a note app to transfer it to your computer
-- Update the Obtanium link in your Readme with the new **HTML link** (the link should currently be commented out if you used the template)
-
 ## Web Deployment
 
 Follow the instructions [here](https://docs.expo.dev/deploy/web/)
