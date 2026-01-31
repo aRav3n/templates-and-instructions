@@ -25,7 +25,7 @@ Write a paragraph or two describing the project here.
 ## Where to Download the App
 
 <!-- ******** Add link ************
-[Try it out online](LINK_TO_WEB_DEPLOYMENT)
+<a href="APP_DEPLOYMENT_URL"><img src="https://img.shields.io/badge/Try%20it%20Online-000000?style=for-the-badge&logo=globe&logoColor=white" style="height: 48px; width: auto;"/></a>
 -->
 
 <!-- ******** Add link ************
