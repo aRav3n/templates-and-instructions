@@ -28,16 +28,15 @@
 7.  In the GitHub repo click **Add File** > **Create New File**
 8.  In the file name field, type `LICENSE` (all uppercase).
 9.  Under the file name, click **Choose a license template**
-1.  Select the desired license
-1.  Submit with this commit message:
+10. Select the desired license
+11. Submit with this commit message:
     - ```bash
       chore: add license
       ```
-1.  ```bash
+12. ```bash
     git pull origin main
     ```
-1.  Update the README using my template
-
+13. Update the README using my template
     1.  ```bash
         code README.md
         ```
@@ -56,9 +55,9 @@
         git push origin main
         ```
 
-1.  Start building the project
+14. Start building the project
     1. [Setup instructions](https://docs.expo.dev/tutorial/create-your-first-app/)
-1.  ```bash
+15. ```bash
     clear && npx expo start --tunnel
     ```
 
@@ -73,6 +72,7 @@
 1.  ```bash
     code app.json
     ```
+
     - ```bash
       // Verify that @prisma/react-native is listed under expo.plugins
       {
@@ -82,13 +82,16 @@
         }
       }
       ```
+
 1.  ```bash
     git add .
     git commit
     ```
+
     - ```git
       chore: install Prisma dependencies
       ```
+
 1.  ```bash
     npx expo prebuild --clean
     ```
@@ -119,9 +122,11 @@
     git add .
     git commit
     ```
+
     - ```git
       chore: create Prisma schema
       ```
+
 1.  ```bash
     touch prisma.config.ts
     code prisma.config.ts
@@ -142,22 +147,28 @@
     git add .
     git commit
     ```
+
     - ```git
       chore: create Prisma config file
       ```
+
 1.  ```bash
     npx prisma@latest migrate dev
     npx prisma@latest generate
     ```
+
     - Enter a name for the migration when asked `✔ Enter a name for the new migration:`
       - When in doubt, `init` is a good name for the first migration
+
 1.  ```bash
     git add .
     git commit
     ```
+
     - ```git
       chore: create first Prisma migration
       ```
+
 1.  ```bash
     mkdir db
     touch db/queries.ts
@@ -201,6 +212,7 @@
 # Publishing
 
 ## Creating Icons
+
 1. Follow [this guide](https://docs.expo.dev/develop/user-interface/splash-screen-and-app-icon/) and/or check out the [related YouTube video](https://www.youtube.com/watch?v=3Bsw8a1BJoQ)
 1. Duplicate `ios-light.png`
    1. Rename the new copy to `icon.png`
@@ -210,6 +222,7 @@
    rm -r -f assets/images
    code app.json
    ```
+
    1. ```json
       {
         "expo": {
@@ -294,3 +307,24 @@
 ## Web Deployment
 
 Follow the instructions [here](https://docs.expo.dev/deploy/web/)
+
+Local copy of above linked instructions:
+
+1. ```bash
+   code app.json
+   ```
+1. Verify that `expo.web.output` is either `static` or `server`
+1. ```bash
+   npx expo export --platform web
+   ```
+
+   - Remember to re-run this before every deployment if you've made any changes
+
+1. To publish:
+   1. ```bash
+      eas deploy --prod
+      ```
+   1. You'll be prompted to choose a preview URL; you can just hit `enter` to go with the default
+   1. Copy the provided URL into your README as well as
+
+credit: [Expo Docs](https://docs.expo.dev/deploy/web/)
