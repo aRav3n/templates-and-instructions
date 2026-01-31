@@ -223,56 +223,57 @@
    code app.json
    ```
 
-   1. ```json
-      {
-        "expo": {
-          ...
-          "icon": "./assets/icons/icon.png",
-          ...
-          "ios": {
-            "icon": {
-              "dark": "./assets/icons/ios-dark.png",
-              "light": "./assets/icons/ios-light.png",
-              "tinted": "./assets/icons/ios-tinted.png"
-            },
-            ...
-          },
-          "android": {
-            "adaptiveIcon": {
-              ...
-              "foregroundImage": "./assets/icons/adaptive-icon.png",
-              "monochromeImage": "./assets/icons/adaptive-icon.png"
-            },
-            ...
-          },
-          "web": {
-            ...
-            "favicon": "./assets/icons/favicon.png"
-          },
-          "plugins": [
-            ...
-            [
-              ...
-              {
-                "image": "./assets/icons/splash-icon-dark.png",
-                ...
-                "backgroundColor": "#ffffff",
-                "dark": {
-                  "backgroundColor": "#000000",
-                  "image": "./assets/icons/splash-icon-light.png"
-                }
-              }
-            ]
-          ],
-          ...
-        }
-      }
-      ```
+   ```json
+   {
+     "expo": {
+       ...
+       "icon": "./assets/icons/icon.png",
+       ...
+       "ios": {
+         "icon": {
+           "dark": "./assets/icons/ios-dark.png",
+           "light": "./assets/icons/ios-light.png",
+           "tinted": "./assets/icons/ios-tinted.png"
+         },
+         ...
+       },
+       "android": {
+         "adaptiveIcon": {
+           ...
+           "foregroundImage": "./assets/icons/adaptive-icon.png",
+           "monochromeImage": "./assets/icons/adaptive-icon.png"
+         },
+         ...
+       },
+       "web": {
+         ...
+         "favicon": "./assets/icons/favicon.png"
+       },
+       "plugins": [
+         ...
+         [
+           ...
+           {
+             "image": "./assets/icons/splash-icon-dark.png",
+             ...
+             "backgroundColor": "#ffffff",
+             "dark": {
+               "backgroundColor": "#000000",
+               "image": "./assets/icons/splash-icon-light.png"
+             }
+           }
+         ]
+       ],
+       ...
+     }
+   }
+   ```
 
 ## Github
 
-- Set up the **apk** build profile in eas.json
-  - ```json
+1. Set up the **apk** build profile in eas.json
+
+   ```json
     ...
     "build": {
       "apk": {
@@ -283,14 +284,30 @@
       ...
     },
     ...
-    ```
-- ```bash
-  eas build -p android --profile apk
-  ```
-- Download the built app
-- In the repo click **Releases** on the right hand side
-- Click **Draft a new release**
-- Fill everything out and add the apk
+   ```
+
+1. ```bash
+   eas build -p android --profile apk
+   ```
+1. Download the built app
+   - Note your app's **Version**, we will use this to create the GitHub tag
+1. Create a release
+   - (1a) For your first release
+     1. Under the **Releases** section on the right hand side click **Create a new release**
+   - (1b) For subsequent releases
+     1. In the repo click **Releases** on the right hand side
+     1. Click **Draft a new release**
+   2. Create a tag for your release
+      1. Click **Tag: Select tag**
+      1. **Create new tag**
+      1. Your version will be **v** + **App's version that you noted earlier**
+         - So if the app's version was **1.0.0** then your tag will be **v1.0.0**
+   1. Create your release title
+      - For your initial release, **Initial release** is a good title
+   1. Write a brief description for this release
+   1. Drag and drop your .apk file where it says **Attach binaries...**
+   1. When all this is complete, hit **Publish release**
+   1. Congratulate yourself on a job well done!
 
 ## Obtanium
 
