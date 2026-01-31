@@ -36,10 +36,6 @@ Write a paragraph or two describing the project here.
 <a href="https://f-droid.org/packages/"><img src="" style="height: 48px; width: auto;"/></a>
 -->
 
-<!-- ******** Add link ************
-<a href="APP_CONFIGURATION_HTML_LINK"><img src="https://raw.githubusercontent.com/ImranR98/Obtainium/refs/heads/main/assets/graphics/badge_obtainium.png" style="height: 48px; width: auto;"/></a>
--->
-
 ## Usage and Screenshots
 
 <img src="./public/screenshot.png" alt="screenshot" style="height: 50vh; width: auto;">
