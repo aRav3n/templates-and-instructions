@@ -38,7 +38,19 @@ Write a paragraph or two describing the project here.
 
 ## Usage and Screenshots
 
-<img src="./public/screenshot.png" alt="screenshot" style="height: 50vh; width: auto;">
+### Screenshots of the Web App
+
+<div>
+<img src="./assets/images/screenshot.jpg" alt="screenshot" style="max-height: 50vh; max-width: 50vw;">
+<img src="./assets/images/screenshot.jpg" alt="screenshot" style="max-height: 50vh; max-width: 50vw;">
+</div>
+
+### Screenshots of the Android App
+
+<div>
+<img src="./assets/images/screenshot.jpg" alt="screenshot" style="max-height: 50vh; max-width: 50vw;">
+<img src="./assets/images/screenshot.jpg" alt="screenshot" style="max-height: 50vh; max-width: 50vw;">
+</div>
 
 Here's a brief description of how to use the app.
 
