@@ -7,7 +7,6 @@
 - [Publishing](#publishing)
   - [Creating Icons](#creating-icons)
   - [On Github](#github)
-  - [For Obtanium](#obtanium)
   - [A Web Deployment](#web-deployment)
 
 # Initial Setup
