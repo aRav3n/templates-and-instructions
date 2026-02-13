@@ -60,6 +60,44 @@
     clear && npx expo start --tunnel
     ```
 
+## Creating a Development Build
+
+1. ```bash
+   npx expo install expo-dev-client
+   ```
+1. Build the native app
+   - android:
+
+     ```bash
+     eas build --platform android --profile development
+     ```
+
+   - ios (simulator):
+     1. ```bash
+        code eas.json
+        ```
+        ```json
+        {
+          "build": {
+            "development": {
+              "ios": {
+                "simulator": true
+              }
+            }
+          }
+        }
+        ```
+     1. ```bash
+        eas build --platform ios --profile development
+        ```
+
+1. Once the app is built, install it on your device or on the simulator then run the server
+   ```bash
+   clear && npx expo start --tunnel
+   ```
+
+credit: [Expo docs](https://docs.expo.dev/develop/development-builds/expo-go-to-dev-build/)
+
 ## Prisma Setup
 
 1.  ```bash
@@ -329,6 +367,6 @@ Local copy of above linked instructions:
       eas deploy --prod
       ```
    1. You'll be prompted to choose a preview URL; you can just hit `enter` to go with the default
-   1. Copy the provided URL into your README as well as
+   1. Copy the provided URL into your README as well as the GitHub repo's **About**
 
 credit: [Expo Docs](https://docs.expo.dev/deploy/web/)
