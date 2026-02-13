@@ -4,6 +4,7 @@
 
 - [Initial Setup](#initial-setup)
   - [Prisma Setup](#prisma-setup)
+  - [Create a Development Build](#creating-a-development-build)
 - [Publishing](#publishing)
   - [Creating Icons](#creating-icons)
   - [On Github](#github)
