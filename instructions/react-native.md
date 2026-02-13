@@ -63,6 +63,12 @@
 
 ## Creating a Development Build
 
+1. Verify that the necessary packages are up to date
+   ```bash
+   npm audit fix
+   npm install -g eas-cli
+   npx expo install --check
+   ```
 1. ```bash
    npx expo install expo-dev-client
    ```
