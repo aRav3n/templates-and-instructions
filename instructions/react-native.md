@@ -3,8 +3,8 @@
 ## Table of Contents
 
 - [Initial Setup](#initial-setup)
-  - [Prisma Setup](#prisma-setup)
   - [Create a Development Build](#creating-a-development-build)
+  <!--  - [Prisma Setup](#prisma-setup) -->
 - [Publishing](#publishing)
   - [Creating Icons](#creating-icons)
   - [On Github](#github)
@@ -105,6 +105,7 @@
 
 credit: [Expo docs](https://docs.expo.dev/develop/development-builds/expo-go-to-dev-build/)
 
+<!--
 ## Prisma Setup
 
 1.  ```bash
@@ -252,6 +253,7 @@ credit: [Expo docs](https://docs.expo.dev/develop/development-builds/expo-go-to-
 1.  ```bash
     git push origin main
     ```
+-->
 
 # Publishing
 
