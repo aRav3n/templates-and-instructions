@@ -1,5 +1,12 @@
 # React Setup
 
+## Table of Contents
+
+- [Initial Setup](#initial-setup)
+- [Troubleshooting](#troubleshooting)
+- [Publishing](#publishing)
+  - [Adding a Custom Domain](#adding-a-custom-domain)
+
 ## Initial Setup:
 
 1.  `cd` into your preferred parent directory
@@ -8,6 +15,11 @@
     ```
     npm create vite@latest APP_NAME -- --template react
     ```
+    - Or for a project built with TypeScript:
+        ```
+        npm create vite@latest APP_NAME -- --template react-ts
+        ```
+
 
     ```
     cd APP_NAME
@@ -15,6 +27,7 @@
 
     ```
     npm install
+    code .gitignore
     ```
 
 3.  Select all and paste the gitignore emmet snippet
@@ -22,11 +35,12 @@
     1.  Create a new **empty** repo in GitHub
     2.  Paste the code from **…or create a new repository on the command line** into your IDE terminal and run it
 5.  Install the [eslint-prettier](https://github.com/prettier/eslint-config-prettier?tab=readme-ov-file#installation) config
-    
+
     ```
     npm i -D eslint-config-prettier
-    code eslint.config.js 
+    code eslint.config.js
     ```
+
 6.  ```
     export default [
       { extends: ["prettier"] },
@@ -41,7 +55,7 @@
 
     ```
     build: initialize React project
-    
+
     - Install React + Vite
     - Install NPM packages
     - Set up ESLint-Prettier config
@@ -56,9 +70,9 @@
     3.  Under the file name, click **Choose a license template**
     4.  Select MIT License
     5.  Submit with this commit message:
-        
+
         ```
-        chore: add MIT license
+        chore: add license file
         ```
 
 10. ```
@@ -68,11 +82,10 @@
 ## Troubleshooting
 
 - If input element deselects after typing
-    - It's likely that a nested React element is re-rendered due to a state change. Move the function outside of its parent.
-        - ```
-          i.e. change Payment(){ CashPayment(){} } to CashPayment(){} Payment(){}
-           ```
-            
+  - It's likely that a nested React element is re-rendered due to a state change. Move the function outside of its parent.
+    - ```
+      i.e. change Payment(){ CashPayment(){} } to CashPayment(){} Payment(){}
+      ```
 
 ## Publishing:
 
