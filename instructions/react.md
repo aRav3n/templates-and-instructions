@@ -15,11 +15,11 @@
     ```
     npm create vite@latest APP_NAME -- --template react
     ```
-    - Or for a project built with TypeScript:
-        ```
-        npm create vite@latest APP_NAME -- --template react-ts
-        ```
 
+    - Or for a project built with TypeScript:
+      ```
+      npm create vite@latest APP_NAME -- --template react-ts
+      ```
 
     ```
     cd APP_NAME
@@ -102,10 +102,12 @@
     1.  dist
 10. **Environment variables (advanced)**
     1.  \+ Add variable
-        1.  **Variable name**
-            1.  NODE_VERSION
-        2.  **Value**
-            1.  run **node -v** in your terminal, this number (i.e. v22.13.1) is the value
+        1.  Add your node version
+            - **Variable name**
+              - NODE_VERSION
+            - **Value**
+              - run **node -v** in your terminal, this number (i.e. v22.13.1) is the value
+        2. Add any other variables from your .env file
 11. Click **Save and deploy**
 12. If your project is connecting to an API you build make sure to update the backend's CORS settings
 
