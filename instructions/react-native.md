@@ -13,36 +13,33 @@
 # Initial Setup
 
 1.  Install [Expo Go](https://expo.dev/go) on your device if you don't already have it
-2.  In parent directory
+1.  In parent directory
     ```bash
     npx create-expo-app@latest PROJECT_NAME
     ```
-3.  ```bash
+1.  ```bash
     cd PROJECT_NAME
     ```
-4.  [Create a new **empty** repo in GitHub](https://github.com/new) and follow the instructions to link the new app folder
-5.  Follow the **…or push an existing repository from the command line** instructions
-6.  ```bash
-    git push origin main
-    ```
-7.  In the GitHub repo click **Add File** > **Create New File**
-8.  In the file name field, type `LICENSE` (all uppercase).
-9.  Under the file name, click **Choose a license template**
-10. Select the desired license
-11. Submit with this commit message:
+1.  [Create a new **empty** repo in GitHub](https://github.com/new) and follow the instructions to link the new app folder
+1.  Follow the **…or push an existing repository from the command line** instructions
+1.  In the GitHub repo click **Add File** > **Create New File**
+1.  In the file name field, type `LICENSE` (all uppercase).
+1.  Under the file name, click **Choose a license template**
+1.  Select the desired license
+1.  Submit with this commit message:
     ```bash
     chore: add license
     ```
-12. ```bash
+1.  ```bash
     git pull origin main
     ```
-13. Update the README using my template
+1.  Update the README using my template
     1.  ```bash
         code README.md
         ```
-    2.  Copy my [React Native README Template](https://github.com/aRav3n/templates-and-instructions/blob/main/templates/README/react-native.md)
-    3.  Paste it into README.md
-    4.  ```bash
+    1.  Copy my [React Native README Template](https://github.com/aRav3n/templates-and-instructions/blob/main/templates/README/react-native.md)
+    1.  Paste it into README.md
+    1.  ```bash
         git add .
         git commit
         ```
@@ -55,9 +52,9 @@
         git push origin main
         ```
 
-14. Start building the project
+1.  Start building the project
     1. [Setup instructions](https://docs.expo.dev/tutorial/create-your-first-app/)
-15. ```bash
+1.  ```bash
     clear && npx expo start --tunnel
     ```
 
