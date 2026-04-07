@@ -40,12 +40,14 @@
     1.  Copy my [React Native README Template](../templates/readme_templates/react-native.md)
     1.  Paste it into README.md
     1.  ```bash
-        git add .
-        git commit
+        git commit -a
         ```
 
         ```git
-        docs: update README using my template
+        docs: update README using template
+
+        Template credit:
+        https://github.com/aRav3n/templates-and-instructions
         ```
 
         ```bash
