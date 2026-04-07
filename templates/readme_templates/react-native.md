@@ -166,7 +166,10 @@ Here's a brief description of how to use the app.
         ├──
         └──
     ├── components/
-        ├── styleThemes.ts          # general style themes like spacings, fonts, color palette, etc.
+        ├──
+        └──
+    ├── constants/
+        ├── theme.ts                # general style themes like spacings, fonts, color palette, etc.
         ├──
         └──
     ├── screens/
