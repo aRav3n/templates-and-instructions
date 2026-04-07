@@ -106,7 +106,7 @@
             - **Variable name**
               - NODE_VERSION
             - **Value**
-              - run **node -v** in your terminal, this number (i.e. v22.13.1) is the value
+              - run `node -v` in your terminal, this number (i.e. v22.13.1) is the value
         2. Add any other variables from your .env file
 11. Click **Save and deploy**
 12. If your project is connecting to an API you build make sure to update the backend's CORS settings
