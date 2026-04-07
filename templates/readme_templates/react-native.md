@@ -70,24 +70,25 @@ Here's a brief description of how to use the app.
 1. `git clone COPIED_URL`
 1. `cd PROJECT_FOLDER`
 1. Run the following in your terminal
-     ```bash
-     npm init -y
-     npm install
-     ```
-     ```bash
-     eas login
-     ```
+   ```bash
+   npm init -y
+   npm install
+   ```
+   ```bash
+   eas login
+   ```
 1. ```bash react native
    npx expo start
    ```
 
    - If there are [issues](https://docs.expo.dev/get-started/start-developing/#having-problems) run this instead
-       ```bash
-       npx expo start --tunnel
-       ```
+     ```bash
+     npx expo start --tunnel
+     ```
    - `^` + `c` will end the process
 
 **Note: to build a production apk:**
+
 1. ```bash
    code eas.json
    ```
@@ -104,9 +105,9 @@ Here's a brief description of how to use the app.
    }
    ```
 1. Then you can run the apk build profile
-     ```
-     eas build --platform android --profile apk
-     ```
+   ```
+   eas build --platform android --profile apk
+   ```
 
 ## Technologies Used
 
@@ -145,50 +146,49 @@ Here's a brief description of how to use the app.
 
 ## Project Structure
 
+<!-- make sure to add spaces in front of file names -->
+
 ```bash
-├──app/                               # Controller files
-   ├──(tabs)/                         # App pages
-      ├──_layout.tsx
-      ├──explore.tsx
-      └──index.tsx
-   ├──_layout.tsx
-   └──modal.tsx
-├──assets/                            # Compiled queries.js
-   └──images/                         # Image files
-      ├──android-icon-background.png
-      ├──android-icon-foreground.png
-      ├──android-icon-monochrome.png
-      ├──favicon.png
-      ├──icon.png
-      ├──partial-react-logo.png
-      ├──react-logo.png
-      ├──react-logo@2x.png
-      ├──react-logo@3x.png
-      └──splash-icon.png
-├──components/                        # Generated Prisma files
-   ├──ui/                             # UI components
-      ├──collapsible.tsx
-      ├──icon-symbol.ios.tsx
-      └──icon-symbol.tsx
-   ├──external-link.tsx
-   ├──haptic-tab.tsx
-   ├──hello-wave.tsx
-   ├──parallax-scroll-view.tsx
-   ├──themed-text.tsx
-   └──themed-view.tsx
-├──constants/                         # Prisma models and migrations
-   └──theme.ts
-├──hooks/                             # Locally hosted images and icons
-   ├──use-color-scheme.ts
-   ├──use-color-scheme.web.ts
-   └──use-theme-color.ts
-├──scripts/                           # Router files
-   └──reset-project.js
-├──app.json
-├──eslint.config.js
-├──LICENSE
-├──package-lock.json
-├──package.json
-├──README.md
-└──tsconfig.js
+├── assets/
+   └── images/                      # Image files
+        ├──
+        └──
+├── scripts/
+├── src/
+    ├── app/
+        ├──(tabs)
+            ├──
+            ├──
+            └──
+        ├── api/                    # API routes in a separate folder
+            ├──
+            └──
+        ├──
+        └──
+    ├── components/
+        ├── styleThemes.ts          # general style themes like spacings, fonts, color palette, etc.
+        ├──
+        └──
+    ├── screens/
+        ├── home/
+            ├──
+            └──
+        ├──
+        └──
+    ├── server/                     # code used in /api
+        ├── auth.ts
+        └── db.ts
+    ├── utils/                      # reusable utilities
+        ├──
+        └──
+    ├── hooks/
+        ├──
+        └──
+├── LICENSE
+├── app.json
+├── eslint.config.js
+├── package-lock.json
+├── package.json
+├── README.md
+└── tsconfig.js
 ```
