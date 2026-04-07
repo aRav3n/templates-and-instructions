@@ -37,7 +37,7 @@
     1.  ```bash
         code README.md
         ```
-    1.  Copy my [React Native README Template](https://github.com/aRav3n/templates-and-instructions/blob/main/templates/README/react-native.md)
+    1.  Copy my [React Native README Template](../templates/readme_templates/react-native.md)
     1.  Paste it into README.md
     1.  ```bash
         git add .
