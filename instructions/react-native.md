@@ -57,7 +57,8 @@
 1.  Start building the project
     1. [Setup instructions](https://docs.expo.dev/tutorial/create-your-first-app/)
 1.  ```bash
-    clear && npx expo start --tunnel
+    clear
+    npx expo start --clear
     ```
 
 ## Creating a Development Build
